@@ -7,24 +7,87 @@ body{
     flex-direction:column ;
     align-items: center;
     justify-content: center ;
+    background-color: rgb(251, 218, 148);
+    gap: 40px;
     
 }
-
+header{
+    font-size: 50px;
+    font-weight: bold;
+}
 
 .buttons{
     align-self: flex-start;
+    display: flex;
+    gap: 30px;
+    margin-left: 40px;
+}
+button{
+    padding: 10px;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 20px ;
+    font-weight: bold;
+    cursor: pointer;
 }
 .grid{
-    width: 960px;
-    height: 960px;
+    width: 600px;
+    height: 600px;
     display: grid;
     grid-template-columns: repeat(var(--grid-cols),1fr);
     grid-template-rows: repeat(var(--grid-rows),1fr);
     align-content: center;
     justify-content: center;
+    border: 3px solid rgb(173, 173, 173);
+    border-radius: 3px;
+    padding: 80px;
+    background-color: rgb(245, 248, 248);
+    margin-bottom: 50px;
    
 }
 .square{
     
     border: solid black 1px;
+    background: white;
+    
+
+}
+
+.colors{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: white;
+    border: solid 2.5px black;
+    border-radius: 3px;
+}
+.color{
+    align-self:stretch ;
+    padding: 25px;
+    background-color:rgb(192, 192, 192) ;
+}
+.colorSquares{
+    width: 130px;
+    height: 60px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2,1fr);
+    align-content: center;
+    justify-content: center;        
+    border-top: 3px solid rgb(52, 52, 52);
+    border-radius: 1px;
+}
+.colorSquare{
+    border-radius: 1px;
+    border-bottom: 1px solid rgb(51, 51, 51);
+    border-right: 1px solid rgb(51, 51, 51);
+    cursor: pointer;
+}
+.colorSquare:hover{
+    border:solid rgb(226, 221, 221) 3px ;
+    border-radius: 2px;
+}
+#clear,#changeGrid{
+    align-self: center;
 }
